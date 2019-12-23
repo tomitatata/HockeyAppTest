@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC1C51001E643EADF0BBE93 /* Pods_HockeyAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E9061336301D8E5A7F7EB7 /* Pods_HockeyAppTest.framework */; };
 		5039175223B08BD100AD98E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039175123B08BD100AD98E5 /* AppDelegate.m */; };
 		5039175523B08BD100AD98E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039175423B08BD100AD98E5 /* ViewController.m */; };
 		5039175823B08BD100AD98E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5039175623B08BD100AD98E5 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A4E9A1530A499B79932662C /* Pods-HockeyAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppTest.debug.xcconfig"; path = "Target Support Files/Pods-HockeyAppTest/Pods-HockeyAppTest.debug.xcconfig"; sourceTree = "<group>"; };
+		31E17AC61D828E1CA8A7B0D8 /* Pods-HockeyAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppTest.release.xcconfig"; path = "Target Support Files/Pods-HockeyAppTest/Pods-HockeyAppTest.release.xcconfig"; sourceTree = "<group>"; };
 		5039174D23B08BD100AD98E5 /* HockeyAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5039175023B08BD100AD98E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5039175123B08BD100AD98E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		5039175C23B08BD200AD98E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5039175E23B08BD200AD98E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5039175F23B08BD200AD98E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5E9061336301D8E5A7F7EB7 /* Pods_HockeyAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HockeyAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC1C51001E643EADF0BBE93 /* Pods_HockeyAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC1724A102DD0BF00412967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5E9061336301D8E5A7F7EB7 /* Pods_HockeyAppTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10069E9155EAF81545DFE5D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A4E9A1530A499B79932662C /* Pods-HockeyAppTest.debug.xcconfig */,
+				31E17AC61D828E1CA8A7B0D8 /* Pods-HockeyAppTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5039174423B08BD100AD98E5 = {
 			isa = PBXGroup;
 			children = (
 				5039174F23B08BD100AD98E5 /* HockeyAppTest */,
 				5039174E23B08BD100AD98E5 /* Products */,
+				10069E9155EAF81545DFE5D4 /* Pods */,
+				0DC1724A102DD0BF00412967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5039176323B08BD200AD98E5 /* Build configuration list for PBXNativeTarget "HockeyAppTest" */;
 			buildPhases = (
+				5666FACEF3E47FB127F10A8F /* [CP] Check Pods Manifest.lock */,
 				5039174923B08BD100AD98E5 /* Sources */,
 				5039174A23B08BD100AD98E5 /* Frameworks */,
 				5039174B23B08BD100AD98E5 /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5666FACEF3E47FB127F10A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HockeyAppTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5039174923B08BD100AD98E5 /* Sources */ = {
@@ -283,6 +333,7 @@
 		};
 		5039176423B08BD200AD98E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A4E9A1530A499B79932662C /* Pods-HockeyAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.9.9;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.HockeyAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +352,7 @@
 		};
 		5039176523B08BD200AD98E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E17AC61D828E1CA8A7B0D8 /* Pods-HockeyAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.9.9;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.HockeyAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
