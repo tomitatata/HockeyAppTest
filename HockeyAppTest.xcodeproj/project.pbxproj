@@ -336,16 +336,18 @@
 			baseConfigurationReference = 1A4E9A1530A499B79932662C /* Pods-HockeyAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FE8SUFVCM8;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RCL6UKLHZR;
 				INFOPLIST_FILE = HockeyAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.9.9;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.HockeyAppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.OptimalBrowser.Test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Optimal Browser Distribution Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -355,16 +357,18 @@
 			baseConfigurationReference = 31E17AC61D828E1CA8A7B0D8 /* Pods-HockeyAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FE8SUFVCM8;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RCL6UKLHZR;
 				INFOPLIST_FILE = HockeyAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.9.9;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.HockeyAppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.optim.OptimalBrowser.Test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Optimal Browser Distribution Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
